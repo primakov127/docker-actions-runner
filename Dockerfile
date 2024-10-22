@@ -26,8 +26,5 @@ WORKDIR /actions-runner
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-# Make sure run.sh is executable
-RUN chmod +x ./run.sh
-
 # Define entrypoint to dynamically configure and run the GitHub Actions runner
 ENTRYPOINT ["/entrypoint.sh"]
