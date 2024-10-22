@@ -5,7 +5,6 @@ on:
     branches:
       - trunk
 
-
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
@@ -34,7 +33,7 @@ jobs:
         # Update repository variable using gh cli
         gh variable set PATH_VERSION -b"${NEW_VERSION}"
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
 
     # Step 3: Set up Docker Buildx
     - name: Set up Docker Buildx
