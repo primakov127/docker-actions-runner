@@ -53,7 +53,7 @@ jobs:
         context: .
         push: true
         tags: |
-          your-dockerhub-username/github-actions-runner:latest
-          your-dockerhub-username/github-actions-runner:1.0.${{ steps.version.outputs.new_version }}
+          primakov127/github-actions-runner:latest
+          primakov127/github-actions-runner:1.0.${{ steps.version.outputs.new_version }}
         build-args: |
           RUNNER_VERSION=2.320.0
