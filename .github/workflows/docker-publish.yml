@@ -7,7 +7,7 @@ on:
 
 # Add permissions block to allow writing variables
 permissions:
-  actions: write
+  contents: write
 
 jobs:
   build-and-push:
